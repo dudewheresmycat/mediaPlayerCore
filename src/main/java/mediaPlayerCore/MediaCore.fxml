@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.layout.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="578.0" prefWidth="986.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mediaPlayerCore.MediaOrganizerController">
+   <children>
+      <Button fx:id="pauseTrack" alignment="CENTER" contentDisplay="CENTER" layoutX="808.0" layoutY="14.0" mnemonicParsing="false" onAction="#pauseButtonListener" prefHeight="51.0" prefWidth="50.0" text="I I">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="playTrack" alignment="CENTER" contentDisplay="CENTER" layoutX="858.0" layoutY="14.0" mnemonicParsing="false" onAction="#playButtonListener" prefHeight="43.0" prefWidth="50.0" text="&gt;">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="nextTrack" alignment="CENTER" contentDisplay="CENTER" layoutX="908.0" layoutY="14.0" mnemonicParsing="false" onAction="#nextTrackListener" prefHeight="51.0" prefWidth="64.0" text="&gt;&gt;">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Button>
+      <Button fx:id="previousTrack" alignment="CENTER" contentDisplay="CENTER" layoutX="744.0" layoutY="14.0" mnemonicParsing="false" onAction="#previousTrackListener" prefHeight="51.0" prefWidth="64.0" text="&lt;&lt;">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Button>
+      <ListView fx:id="listView" layoutX="11.0" layoutY="14.0" prefHeight="533.0" prefWidth="721.0" />
+      <TextField fx:id="folderToUse" layoutX="743.0" layoutY="176.0" prefHeight="37.0" prefWidth="228.0" promptText="G:/" text="G:/" />
+      <Label layoutX="743.0" layoutY="132.0" prefHeight="37.0" prefWidth="228.0" text="Folder to Pull From" />
+      <Button fx:id="refresh" layoutX="743.0" layoutY="231.0" mnemonicParsing="false" onAction="#refreshButtonListener" prefHeight="37.0" prefWidth="90.0" text="Refresh" />
+   </children>
+</AnchorPane>
